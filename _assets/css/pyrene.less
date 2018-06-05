@@ -1,0 +1,423 @@
+@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700');
+
+/**
+ * @name bsp.less : Styles spécifiques Business Strategy Partners
+**/
+
+/**
+ * @var primary_color : Couleur primaire utilisée
+ */
+@primary_color: #978274;
+
+/**
+ * @var secondary_color : Couleur secondaire
+ */
+@secondary_color: hsla(80, 60%, 50%, 1);
+/**
+* @var border-type-1 : Bordure de type 1
+*/
+
+@border-type-1: 1px solid black;
+
+body{
+	font-family: "Source Sans Pro";
+	font-weight: 400;
+	font-size: 1em;
+	color: black;
+}
+
+/**
+*	Définition des sections du one-page
+**/
+
+.top-bar{
+	height: 3.125em;
+	color: black;
+	.border;
+	.shadow;
+
+	.slogan, .label, a{
+		font-size: 1.3rem;
+	}
+	a{
+		color: inherit;
+		text-decoration: none;
+	}
+}
+
+header{
+	&.top{
+		.logo {
+			position: relative;
+			animation-name: appear;
+			animation-duration:1.5s;
+			animation-iteration-count: 1;
+			animation-fill-mode: backwards;
+			animation-timing-function: ease-in;
+
+			a{
+				animation: none;
+			}
+		}
+		h1 {
+			&.titre{
+				font-size: 2em;
+				font-weight: 700;
+				line-height: 1.125em;
+				vertical-align: middle;
+			}
+		}
+	}
+}
+.row{
+	margin: 0;
+}
+#main-menu-wrapper{
+	.collapse{
+		padding: 0;
+	}
+	.btn-default{
+		background-color: @primary_color;
+		color: white;
+	}
+	.menu-center{
+		margin-top: 8em;
+		color: hsla(0, 0%, 13%, 1);
+		.primary-color-text{
+			color: @primary_color;
+		}
+		.typo-type-1{
+			font-size: 1.6em;
+			font-weight: 900;
+		}
+	}
+	.navbar-form{
+		margin-top: 8em;
+	}
+	.navbar-brand{
+		margin-top: -2.5em;
+		height: 0;
+		padding: 15 0;
+		line-height: normal;
+	}
+	min-height: 18.75em;
+	height: auto;
+	background-color: white;
+
+	.navbar-default{
+		background: transparent;
+		border: none;
+		.navbar-nav{
+			background-color: @primary_color;
+			float: none;
+			display: flex;
+			justify-content: center;
+
+			li > a {
+				color: white;
+				font-size: 1.3em;
+				text-transform: uppercase;
+				letter-spacing: 0.1em;
+			}
+		}
+	}
+
+	.topnav{
+		padding: 0;
+		&.navbar-default{
+			&.nav{
+				ul{
+					&.nav > li{
+						a{
+							font-size: 2em;
+						}
+
+					}
+				}
+			}
+		}
+	}
+}
+
+/**
+*	Affichage des activités
+**/
+#activities{
+	.left{
+		background: none;
+	}
+	.right{
+		background: none;
+	}
+	img{
+		width: 100%;
+	}
+	.carousel-caption{
+		margin-top: 3em;
+		@media screen and (min-width: 1170px){
+			margin-bottom: 200px;
+			text-align: left;
+		}
+		h2{
+			font-size: 2.25rem;
+			text-shadow: #333 3px 1px;
+		}
+
+		p{
+			font-size: 1.5rem;
+
+		}
+	}
+	.box-container{
+		.box-items{
+			ul {
+				li {
+					&.active{
+						opacity: 1;
+					}
+					&.unactive{
+						opacity: 0.7;
+					}
+				}
+			}
+		}
+		.box-items-content{
+			ul{
+				li{
+					&.active{
+						/** Rien de spécial **/
+					}
+					&.unactive{
+						display: none;
+					}
+				}
+			}
+		}
+	}
+}
+
+#about {
+	background-color: @primary_color;
+	padding: 15em 2em;
+	overflow: hidden;
+	div{
+		font-size: 1.25em;
+		background-color: white;
+		p{
+			padding-left: 5em;
+			padding-right: 5em;
+			text-align: justify;
+		}
+		img{
+			width: auto;
+			height: 13em;
+			&.img1{
+				position:relative;
+				top: -7em;
+				left: -7em;
+			}
+			&.img2{
+				position:relative;
+				bottom: -7em;
+				left: 68em;
+			}
+		}
+	}
+}
+
+#spotlight{
+	margin-top: 1em;
+	background-color: @primary_color;
+	text-align: center;
+	padding-top: 4em;
+	padding-bottom: 4em;
+	article{
+		.spotlight{
+			background-color: white;
+			margin-bottom: 3em;
+			margin-top: 3em;
+			padding: 0.5em;
+		}
+
+	}
+}
+
+#information{
+	text-align: center;
+	margin-top: 5em;
+	margin-bottom: 5em;
+	div{
+		.color-icon{
+			color: @secondary_color;
+			margin: auto;
+			padding: 0.5em;
+		}
+		p{
+			font-size: 2em;
+		}
+	 	.box-1{
+			border-right: @border-type-1;
+			border-left: @border-type-1;
+		}
+	}
+}
+
+#contact{
+	.main{
+		margin-top: 2em;
+		margin-bottom: 2em;
+	}
+	.contact{
+		h2{
+			text-align: left;
+			margin-top: 0;
+		}
+		.adresse i + p{
+			display: inline-block;
+			margin-left: 1em;
+		}
+	}
+
+	.maps{
+		width: 100%;
+		height: 30em;
+		border: 0;
+	}
+	form{
+		input[type=submit]{
+			display: block !important;
+		}
+		textarea{
+			&.message{
+				height: 100%;
+				min-height: 5em;
+				min-width: 15em;
+			}
+		}
+	}
+}
+
+
+/**
+* Gestion du menu Catégories de produits
+**/
+ul#menu{
+	li > ul {
+		display:none;
+	}
+}
+
+/**
+ * Page d'inscription
+ */
+ #signin-login{
+ 	#DejaInscrit, #NvInscrit{
+ 		text-align: center;
+ 	}
+ 	#NvInscrit{
+ 		border-left: solid 2px @primary_color;
+ 	}
+ }
+ 
+ /**
+  * Menu Customer
+  */
+#footerMenu{
+	ul {
+		&.listFooter{
+			&.my-account-menu{
+				&.not-active{
+					display: none;
+				}
+			}
+		}
+	}
+}
+ 
+/**
+ * Toast
+ */
+.toast{
+	position: fixed;
+	top: 0;
+	left: 30%;
+	height: auto;
+	width: 50em;
+	font-size: 1.75em;
+	text-align: center;
+	z-index: 110;
+}
+
+/**
+ * MIXINS
+**/
+.shadow(@color: @primary_color){
+  	box-shadow: 0 1px 2px 0 @color;
+}
+
+ .border(@radius:3px, @border-color: @primary_color) {
+  	border-radius: @radius;
+  	border: 1px solid @border-color - #050505;
+}
+
+.hovereffect(@color: @primary_color) {
+	background: -moz-linear-gradient(top, @color - #010101 0%, @color - #121212 50%, @color - #222222 51%, @color - #050505 100%);
+	background: -webkit-linear-gradient(top, @color - #010101 0%, @color - #121212 50%, @color - #222222 51%, @color - #050505 100%);
+  background: linear-gradient(top, @color - #010101 0%, @color - #121212 50%, @color - #222222 51%, @color - #050505 100%);
+}
+
+.textcolor(@txtcolor) when (lightness(@txtcolor) >= 50%) {
+  color: @txtcolor;
+  text-shadow: 1px 1px 0px #000000;
+}
+
+/**
+ * Animations
+ */
+ @keyframes appear {
+ 	0%{
+ 		transform: scale(-1) rotate(-180deg);
+ 		top: -5em;
+ 	}
+
+ 	100%{
+ 		transform: scale(0) rotate(0);
+ 		top: 0;
+ 	}
+ }
+
+ @keyframes k2000{
+	 0%{
+		width: 90%;
+	 }
+	 10%{
+		width: 70%;
+	 }
+	 20%{
+		width: 50%;
+	 }
+	 30%{
+		width: 30%;
+	 }
+	 40%{
+		width: 10%;
+	 }
+	 50%{
+		width: 0%;
+	 }
+	 60%{
+		width: 20%;
+	 }
+	 70%{
+		width: 40%;
+	 }
+	 80%{
+		width: 60%;
+	 }
+	 90%{
+		width: 80%;
+	 }
+	 100%{
+		width: 100%;
+	 }
+ }

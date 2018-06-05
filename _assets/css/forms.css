@@ -1,0 +1,1 @@
+form label.label{color:#000;font-size:1.6em;text-align:left}form label.label.required::after{content:"(*)"}form#signin input[name^=confirm-].nomatch{background:url(interface/cross.png) 7px 7px no-repeat;padding-left:30px}form#signin input[name^=confirm-].match{background:url(interface/check.png) 7px 7px no-repeat;padding-left:30px}

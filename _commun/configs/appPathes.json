@@ -1,0 +1,37 @@
+{
+	"root": {
+		"namespace": "::App::Defaut::Index::",
+		"class": "index",
+		"method": null,
+		"rendermode": "page",
+		"decorators": []
+	},
+	"contact": {
+		"namespace": "::App::Page::Contact::",
+		"class": "index",
+		"params" : ["contact"],
+		"method": null,
+		"rendermode": "page"
+	},
+	"inscription": {
+		"namespace": "::App::Page::Inscription::",
+		"class": "index",
+		"method": null,
+		"rendermode": "page",
+		"decorators": []
+	},
+	"Produits": {
+		"namespace": "::App::Page::Produit::",
+		"class": "index",
+		"params" : ["slug"],
+		"method": null,
+		"rendermode": "page"
+	},
+	"panier": {
+		"namespace": "::App::Page::Panier::",
+		"class": "index",
+		"params" : ["panier"],
+		"method": null,
+		"rendermode": "page"
+	}
+}

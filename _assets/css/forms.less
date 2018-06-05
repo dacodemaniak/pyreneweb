@@ -1,0 +1,35 @@
+/**
+* @forms.less Design des formulaires de l'application
+**/
+
+form {
+	label{
+		&.label{
+			color: #000;
+			font-size: 1.6em;
+			text-align: left;
+			
+			&.required{
+				&::after{
+					content: "(*)"
+				}
+			}
+		}
+	}
+	&#signin{
+
+		
+		input{
+			&[name^="confirm-"]{
+				&.nomatch{
+					background: url("./interface/cross.png") no-repeat scroll 7px 7px;
+					padding-left: 30px;
+				}
+				&.match{
+					background: url("./interface/check.png") no-repeat scroll 7px 7px;
+					padding-left: 30px;
+				} 
+			}
+		}
+	}
+}

@@ -1,0 +1,198 @@
+{
+	"framework": {
+		"root": "/mnt/c/webroot/",
+		"version": "1.1.1"
+	},
+	"template": {
+		"engine": "Smarty",
+		"version": "3.1.30",
+		"extension": ".tpl"
+	},
+	"languages":[
+		{
+			"iso": "fr-FR",
+			"default": true
+		}
+	],
+	"assets": [
+		{
+			"type": "framework",
+			"name": "app",
+			"version": "1.0",
+			"resources": [
+				{
+					"type": "javascript",
+					"file": "vendor.js"
+				},
+				{
+					"type": "javascript",
+					"file": "index.js"
+				}			
+			]
+		},
+		{
+			"type": "npm",
+			"name": "jquery",
+			"version": "3.3.1",
+			"resources": [
+				{
+					"type": "javascript",
+					"file": "dist/jquery.min.js"
+				}
+			]
+		},
+		{
+			"type": "npm",
+			"name": "bootstrap",
+			"version": "3.3.7",
+			"resources": [
+				{
+					"type": "css",
+					"file": "dist/css/bootstrap.min.css"
+				},
+				{
+					"type": "javascript",
+					"file": "dist/js/bootstrap.min.js"
+				}
+			]
+		},
+		{
+			"type": "npm",
+			"name": "animate.css",
+			"version": "3.6.1",
+			"resources": [
+				{
+					"type": "css",
+					"file": "animate.min.css"
+				}
+			]
+		},
+		{
+			"type": "styles",
+			"name": "icomoon",
+			"version": "1.0",
+			"resources": [
+				{
+					"type": "css",
+					"file": "style.css"
+				}
+			]
+		},
+		{
+			"type": "styles",
+			"name": "bootstrap",
+			"version": "3.3.7",
+			"resources": [
+				{
+					"type": "css",
+					"file": "font-awesome.min.css"
+				}
+			]
+		},
+		{
+			"type": "styles",
+			"name": "",
+			"version": "",
+			"resources": [
+				{
+					"type": "css",
+					"file": "pyrene.css"
+				},
+				{
+					"type": "css",
+					"file": "forms.css"
+				}
+			]
+		},
+		{
+			"type": "framework",
+			"name": "jquery-ui",
+			"version": "1.12.0",
+			"resources": [
+				{
+					"type": "javascript",
+					"file": "jquery-ui.min.js"
+				},
+				{
+					"type": "css",
+					"file": "jquery-ui.min.css"
+				},
+				{
+					"type": "css",
+					"file": "jquery-ui.structure.min.css"
+				},
+				{
+					"type": "css",
+					"file": "jquery-ui.theme.min.css"
+				}
+			]
+		},
+		{
+			"type": "framework",
+			"name": "bootstrap-datepick",
+			"version": "1.6.4",
+			"resources":[
+				{
+					"type": "javascript",
+					"file": "bootstrap-datepicker.js"
+				},
+				{
+					"type": "javascript",
+					"file": "bootstrap-datepicker.fr.min.js"
+				},
+				{
+					"type": "css",
+					"file": "bootstrap-datepicker3.css"
+				}
+			]
+		},
+		{
+			"type": "framework",
+			"name": "maskedinput",
+			"version": "1.0",
+			"resources": [
+				{
+					"type": "javascript",
+					"file": "jquery.maskedinput.min.js"
+				}
+			]
+		},
+		{
+			"type": "framework",
+			"name": "fancybox",
+			"version": "2.1.5",
+			"resources": [
+				{
+					"type": "javascript",
+					"file": "jquery.fancybox.pack.js"
+				},
+				{
+					"type": "css",
+					"file": "jquery.fancybox.css"
+				}
+			]
+		},
+		{
+			"type": "framework",
+			"name": "moment",
+			"version": "2.15.1",
+			"resources": [
+				{
+					"type": "javascript",
+					"file": "moment.js"
+				}
+			]
+		},
+		{
+			"type": "framework",
+			"name": "app",
+			"version": "1.0",
+			"resources": [
+				{
+					"type": "javascript",
+					"file": "app.js"
+				}
+			]
+		}
+	]
+}
